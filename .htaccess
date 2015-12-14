@@ -1,0 +1,19 @@
+# PHP Restful HMAC
+# @author Leandro Curioso <leandro.curioso@gmail.com>
+# @copyright Leandro Curioso © 2015
+ 
+#Default charset
+AddDefaultCharset utf-8
+
+#Allowed extensions and default request intercepter file
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteRule ^(.*)$ Boot.php [L,QSA]
+</IfModule>
+
+#Deny access to xml file by the external client, allow just the localhost to access it
+<Files "Config.xml,UnauthenticatedRoute.xml">
+	Order Deny,Allow
+	Deny From All
+	Allow From 127.0.0.1
+</Files>

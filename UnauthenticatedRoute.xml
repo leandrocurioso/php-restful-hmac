@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UnauthenticatedRoute>
+
+     <User>
+        <list_user/>
+        <read_user/>
+        <auth/>
+     </User>
+
+</UnauthenticatedRoute>

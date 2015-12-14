@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+
+    <general>
+        <company_name>My Company Name</company_name>
+        <application_name>Restful Webservice</application_name>
+        <application_state>D</application_state>
+        <session_enabled>false</session_enabled>
+        <secure_http>false</secure_http>
+        <application_charset>utf-8</application_charset>
+        <application_timezone>America/Cuiaba</application_timezone>
+    </general>
+
+    <router>
+        <application_localhost>true</application_localhost>
+        <base_url>/php-restful-hmac/</base_url>
+    </router>
+
+    <service>
+        <request_timeout>36000</request_timeout>
+        <authorization_prefix>Authorization</authorization_prefix>
+        <auth_name_label>email</auth_name_label>
+        <auth_password_label>password</auth_password_label>
+        <auth_user_id_label>id</auth_user_id_label>
+        <user_table>user</user_table>
+        <user_active_label>active</user_active_label>
+    </service>
+
+    <database>
+      <db1>
+          <enabled>true</enabled>
+          <dbms>mysql</dbms>
+          <host>localhost</host>
+          <user>root</user>
+          <password></password>
+          <database_name>db_restful_hmac</database_name>
+      </db1>
+    </database>
+
+</Configuration>

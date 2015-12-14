@@ -1,0 +1,8 @@
+#Default charset
+AddDefaultCharset utf-8
+
+#Allowed extensions and default request intercepter file
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
