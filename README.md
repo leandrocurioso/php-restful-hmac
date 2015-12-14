@@ -1,7 +1,7 @@
 # PHP Restful HMAC Webservice
 A simple restful webservice based on Amazon HMAC authentication.
 
-# Installation and Configuration
+# Installation & Configuration
 1 - First of all download the whole content and unzip into your web root diretory.
 
 2 - Open .htaccess file and change the default charset [AddDefaultCharset utf-8] if you want.
@@ -15,6 +15,11 @@ A simple restful webservice based on Amazon HMAC authentication.
 - general->secure_http: Set if the application is running in HTTPS. Use true or false;
 - general->application_charset: Set the application charset;
 - general->application_timezone: Set the application timezone. (http://php.net/manual/en/timezones.php);
+
 - router->application_localhost: Set if the application is running on localhost. Use true or false;
 - router->base_url: Set the base url of the application, if you are not running in localhost just use a single slash / ;
+
+- service->base_url: Set the base url of the application, if you are not running in localhost just use a single slash / ;
+
+
 
