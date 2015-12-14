@@ -15,11 +15,17 @@ A simple restful webservice based on Amazon HMAC authentication.
 - general->secure_http: Set if the application is running in HTTPS. Use true or false;
 - general->application_charset: Set the application charset;
 - general->application_timezone: Set the application timezone. (http://php.net/manual/en/timezones.php);
-
 - router->application_localhost: Set if the application is running on localhost. Use true or false;
 - router->base_url: Set the base url of the application, if you are not running in localhost just use a single slash / ;
+- service->request_timeout: The request timeout that expire the call. Use it in milliseconds.
+- service->authorization_prefix: The authorization prefix can be any string but the client application must use the same prefix;
+- service->auth_name_label: Name of the column in your user table that is the login. Example: (email, login, username etc..);
+- service->auth_password_label: Name of the column in your user table that is the password. Example: (password, secretkey etc..);
+- service->auth_user_id_label: Name of the column in your user table that is the id. Example: (id, ID, user_id etc..);
+- service->user_table: Name of your user table. Example: (user, client etc..);
+- service->user_active_label: Name of the column in your user table that is the active. Example: (active, status etc..);
 
-- service->base_url: Set the base url of the application, if you are not running in localhost just use a single slash / ;
+
 
 
 
