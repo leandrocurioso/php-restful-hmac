@@ -24,8 +24,12 @@ A simple restful webservice based on Amazon HMAC authentication.
 - service->auth_user_id_label: Name of the column in your user table that is the id. Example: (id, ID, user_id etc..);
 - service->user_table: Name of your user table. Example: (user, client etc..);
 - service->user_active_label: Name of the column in your user table that is the active. Example: (active, status etc..);
-
-
-
+- database: Here you can add any desired amount and types of database that you want. Since PDO can handle it. For each database you must spefify the key that call its, in the default example we will use db1 but can be any key.
+- database->db1->enabled: Set if the databse is enabled or disabled . Use true or false;
+- database->db1->dbms: Set the database management system for the connection. If you want to check the full supported dbms open the PDOHandler.class.php in the Library/Toolkit folder in method dsn_switcher();
+- database->db1->host: The database host;
+- database->db1->user: The database user;
+- database->db1->password: The database password;
+- database->db1->database_name: The database name;
 
 
