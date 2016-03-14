@@ -31,5 +31,3 @@ A simple restful webservice based on Amazon HMAC authentication.
 - database->db1->user: The database user;
 - database->db1->password: The database password;
 - database->db1->database_name: The database name;
-
-# Not complete yet I will finish this until 2015-12-25
